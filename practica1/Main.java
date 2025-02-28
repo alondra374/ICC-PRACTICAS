@@ -7,8 +7,8 @@ public class Main {
     Scanner calcula = new Scanner(System.in);
 
     while (opcion != 5){ 
-    
 
+        System.out.println("");
         System.out.println("|========================|");
         System.out.println("|                        |");
         System.out.println("| C A L C U L A D O R A  |");
@@ -23,7 +23,7 @@ public class Main {
         System.out.println("1.- Quiero SUMAR");
         System.out.println("2.- Quiero MULTIPLICAR");
         System.out.println("3.- Quiero DIVIDIR");
-        System.out.println("4.- Adivinemos el numero");
+        System.out.println("4.- Adivinare tú número");
         System.out.println("5.- Quiero SALIR");
 
         opcion = calcula.nextInt();
@@ -85,7 +85,7 @@ public class Main {
                 System.out.println("Ingresa el número.");
                 double g = calcula.nextDouble();
                 
-                System.out.println("Tu numero es  : " + (g));
+                System.out.println("Tu número es  : " + (g)) ;
                 
             }
 
