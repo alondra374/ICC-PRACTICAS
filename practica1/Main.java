@@ -6,7 +6,7 @@ public class Main {
     int opcion = 0;
     Scanner calcula = new Scanner(System.in);
 
-    while (opcion != 4){ 
+    while (opcion != 5){ 
     
 
         System.out.println("|========================|");
@@ -23,7 +23,8 @@ public class Main {
         System.out.println("1.- Quiero SUMAR");
         System.out.println("2.- Quiero MULTIPLICAR");
         System.out.println("3.- Quiero DIVIDIR");
-        System.out.println("4.- Quiero SALIR");
+        System.out.println("4.- Adivinemos el numero");
+        System.out.println("5.- Quiero SALIR");
 
         opcion = calcula.nextInt();
 
@@ -32,7 +33,7 @@ public class Main {
          * 
          */
 
-        if (opcion < 1 || opcion > 4 ){
+        if (opcion < 1 || opcion > 5 ){
             System.out.print("opcion no valida");
         }
         else{
@@ -77,6 +78,14 @@ public class Main {
                 double divicion = e * f;
                 
                 System.out.println("El resultado de la operacion es  : " + (e * f));
+                
+            }
+            if (opcion == 4){
+
+                System.out.println("Ingresa el número.");
+                double g = calcula.nextDouble();
+                
+                System.out.println("Tu numero es  : " + (g));
                 
             }
 
